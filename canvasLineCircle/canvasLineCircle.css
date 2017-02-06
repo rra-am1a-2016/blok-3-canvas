@@ -1,0 +1,9 @@
+canvas
+{
+   background-color: lightgray;
+   border: 5px solid black;
+   border-radius: 5px;
+   width: 600px;
+   display: block;
+   margin: 50px auto;
+}
