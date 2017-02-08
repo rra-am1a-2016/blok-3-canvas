@@ -14,7 +14,6 @@ document.getElementsByTagName("button")[0].onclick = function () {
 }
 
 var counter = 1;
-
 var interval;
 document.getElementsByTagName("button")[1].addEventListener("click", function () {
    interval = setInterval(flash, 10);   
