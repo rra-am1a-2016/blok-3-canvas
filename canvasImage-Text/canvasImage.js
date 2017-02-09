@@ -45,6 +45,15 @@ function move (direction) {
    if ( direction == 'right') {
       speedX = speed;
    }
+   if (direction == 'down') {
+      speedY = speed;
+   }
+}
+
+function stop () {
+   speedX = 0;
+   speedY = 0;
+   image.src = "./sad.png";   
 }
 
 
