@@ -5,9 +5,10 @@ var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
 document.getElementsByTagName("button")[0].onclick = function () {
-   var gradient = ctx.createLinearGradient(0, 200, 600, 200);
+   var gradient = ctx.createLinearGradient(300, 0, 300, 400);
    gradient.addColorStop(0, "red");
-   gradient.addColorStop(0.2, "white");
+   gradient.addColorStop(0.35, "white");
+   gradient.addColorStop(0.65, "white");   
    gradient.addColorStop(1.0, "blue");
    ctx.fillStyle = gradient;
    ctx.fillRect(10, 10, 580, 380);
