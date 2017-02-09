@@ -28,7 +28,7 @@ context.drawImage(image, x, y, image.width/3, image.height/3);
 setInterval(updateGame, 20);
 
 function updateGame () {
-   context.clearRect(300, 0, 150, 150);
+   context.clearRect(0, 0, canvas.width, canvas.height);
    newPos();
    context.fillText("Van bewegen wordt ik blij!", 60, 70);
    context.drawImage(image, x, y, image.width/3, image.height/3);
@@ -37,6 +37,14 @@ function updateGame () {
 function newPos () {
    x += speedX;
    y += speedY;
+}
+
+var speed = 2
+function move (direction) {
+   image.src = "./happy.png";
+   if ( direction == 'right') {
+      speedX = speed;
+   }
 }
 
 
