@@ -74,6 +74,14 @@ function drawCanvas () {
    context.lineWidth = 1;
    context.stroke();
    context.closePath();
+
+   // De y-as
+   context.beginPath();
+   context.moveTo(10, 360);
+   context.lineTo(580, 360);
+   context.lineWidth = 1;
+   context.stroke();
+   context.closePath();
    
 }
 

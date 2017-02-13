@@ -18,11 +18,7 @@ ctx.closePath();
 ctx.stroke();
 
 
-ctx.moveTo(300, 40);
-ctx.lineTo(300, 250);
-ctx.lineWidth = 20;
-ctx.stroke();
-ctx.closePath();
+ 
 
 
 
