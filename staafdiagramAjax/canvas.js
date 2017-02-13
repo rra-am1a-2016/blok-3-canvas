@@ -83,7 +83,7 @@ function drawCanvas () {
    context.stroke();
    context.closePath();
 
-   // Tekst op het scherm langs y-as
+   // Tekst op het scherm langs y-as.
    // Sla de huidige canvasconfiguratie op
    context.save();
    // Verschuif het canvas naar de positie van je tekst
