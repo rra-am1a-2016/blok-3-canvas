@@ -54,7 +54,7 @@ function drawCanvas () {
       context.fillStyle = randomColor(colorArray);
 
       // Teken een rechthoek met het context-object.
-      context.fillRect(40 + i * 30, 360, 12, -1 * data[i].numberOfContacts);
+      context.fillRect(60 + i * 30, 360, 12, -1 * data[i].numberOfContacts);
    }
 
    // Tekst op het scherm langs x-as
@@ -77,11 +77,27 @@ function drawCanvas () {
 
    // De y-as
    context.beginPath();
-   context.moveTo(10, 360);
-   context.lineTo(580, 360);
+   context.moveTo(40, 385);
+   context.lineTo(40, 10);
    context.lineWidth = 1;
    context.stroke();
    context.closePath();
+
+   // Tekst op het scherm langs y-as
+   // Sla de huidige canvasconfiguratie op
+   context.save();
+   // Verschuif het canvas naar de positie van je tekst
+   context.translate(20, 250);
+   // Roteer het canvas tegen de klok in (min) PI/2
+   context.rotate(-1 * Math.PI/2);
+   // Bepaal de kleur van je Letters
+   context.fillStyle = "#121212";
+   // Bepaal de font
+   context.font = "14px Trebuchet MS";
+   // Teken het op het scherm
+   context.fillText("aantal geschikte bedrijven --->", 0, 0);
+   // Draai het canvas weer terug naar de oude positie
+   context.restore();
    
 }
 
