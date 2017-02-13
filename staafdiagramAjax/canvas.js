@@ -2,13 +2,13 @@
 
 var data = [{ "id": 1,
               "name": "Arjan",
-              "numberOfContacts": 200 },
+              "numberOfContacts": 10 },
             { "id": 2,
               "name": "Bert",
-              "numberOfContacts": 10 },
+              "numberOfContacts": 20 },
             { "id": 3,
               "name": "Hans",
-              "numberOfContacts": 168 },
+              "numberOfContacts": 30 },
             { "id": 4,
               "name": "Dewi",
               "numberOfContacts": 230 },
@@ -55,7 +55,26 @@ function drawCanvas () {
 
       // Teken een rechthoek met het context-object.
       context.fillRect(40 + i * 30, 360, 12, -1 * data[i].numberOfContacts);
-   }   
+   }
+
+   // Tekst op het scherm langs x-as
+   // Bepaal de kleur van je Letters
+   context.fillStyle = "#121212";
+
+   // Bepaal de font
+   context.font = "14px Trebuchet MS";
+
+   // Teken het op het scherm
+   context.fillText("Leerlingen --->", 460, 383);
+
+   // De x-as
+   context.beginPath();
+   context.moveTo(10, 360);
+   context.lineTo(580, 360);
+   context.lineWidth = 1;
+   context.stroke();
+   context.closePath();
+   
 }
 
 drawCanvas();
