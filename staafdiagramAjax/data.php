@@ -12,7 +12,5 @@
 
     $resultArray = mysqli_fetch_all($resource, MYSQLI_ASSOC);
 
-    //var_dump($resultArray);
-    
     echo json_encode($resultArray);
 ?>

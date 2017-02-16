@@ -98,5 +98,5 @@ setInterval(function () {
    xmlHttp.open("GET", "http://localhost/2016-2017/am1a/Blok%203/Web/canvas/staafdiagramAjax/data.php", true);
    xmlHttp.send();
 
-}, 5000);
+}, 1000);
 
