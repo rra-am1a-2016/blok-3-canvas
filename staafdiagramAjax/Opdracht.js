@@ -59,6 +59,7 @@ var data = [{ "id": 1,
 
   11. Zet de info in een modalbox. Kijk bij de volgende link hoe je dit moet doen
       https://www.w3schools.com/howto/howto_css_modals.asp
+      https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 */
 
 
