@@ -116,12 +116,16 @@ canvas.addEventListener('mousemove', function(evt) {
             mousePos.y < data[i].coordinates.y && 
             mousePos.y > data[i].coordinates.y + data[i].coordinates.dy)
       {
+           /*
             alert("id: " + data[i].id + "<br>" +
                   "Naam: " + data[i].firstName + "<br>" +
                   "Aantal gekozen bedrijven: " + data[i].firstName + "<br>" +
                   "dx: " + data[i].coordinates.dx);
+            */
+            modal.style.display = "block";
             break;
       }
+      modal.style.display = "none";
 
    }
 }, false);
