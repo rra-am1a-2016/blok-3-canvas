@@ -56,6 +56,9 @@ var data = [{ "id": 1,
   9. Ga voor ieder staafje in het diagram na of de muispositie zich binnen het rectangle bevindt.
 
   10.Als het dat zo is geef dan een alert met het id van de betreffende persoon.
+
+  11. Zet de info in een modalbox. Kijk bij de volgende link hoe je dit moet doen
+      https://www.w3schools.com/howto/howto_css_modals.asp
 */
 
 

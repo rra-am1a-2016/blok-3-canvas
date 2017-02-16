@@ -106,18 +106,24 @@ function getMousePos(canvas, evt) {
 // en het event leveren de (x,y)-waarde van het canvas en de muis. De berekende
 // (x,y)-waarde zijn relatief ten opzicht van het canvas.
 canvas.addEventListener('mousemove', function(evt) {
-    var mousePos = getMousePos(canvas, evt);
-    //console.log('Mouse position: ' + mousePos.x + ',' + mousePos.y);
+   var mousePos = getMousePos(canvas, evt);
+   //console.log('Mouse position: ' + mousePos.x + ',' + mousePos.y);
+   var length = data.length;
+   for ( var i = 0; i < length; i++)
+   {
+      if ( mousePos.x > data[i].coordinates.x && 
+            mousePos.x < data[i].coordinates.x + data[i].coordinates.dx &&
+            mousePos.y < data[i].coordinates.y && 
+            mousePos.y > data[i].coordinates.y + data[i].coordinates.dy)
+      {
+            alert("id: " + data[i].id + "<br>" +
+                  "Naam: " + data[i].firstName + "<br>" +
+                  "Aantal gekozen bedrijven: " + data[i].firstName + "<br>" +
+                  "dx: " + data[i].coordinates.dx);
+            break;
+      }
 
-
-    if ( mousePos.x > data[2].coordinates.x && 
-         mousePos.x < data[2].coordinates.x + data[2].coordinates.dx &&
-         mousePos.y < data[2].coordinates.y && 
-         mousePos.y > data[2].coordinates.y + data[2].coordinates.dy)
-    {
-         alert("De naam is: " + data[2].firstName);
-    }
-
+   }
 }, false);
 
 function randomColor (colorArray) {
@@ -127,7 +133,7 @@ function randomColor (colorArray) {
 
 getData();
 
-setInterval(getData, 100000);
+setInterval(getData, 50000);
 
 function getData () {
    xmlHttp.open("GET", "http://localhost/2016-2017/am1a/Blok%203/Web/canvas/staafdiagramAjax/data.php", true);
