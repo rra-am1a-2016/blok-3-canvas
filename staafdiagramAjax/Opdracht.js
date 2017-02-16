@@ -49,6 +49,9 @@ var data = [{ "id": 1,
 
    7. Haal deze info uit de tabel asynchroon (Ajax) op uit de database en 
       geef dit weer in de grafiek. numberOfContacts bepaalt de hoogte van de staafjes.
+
+   8. Maak een js function die de (x,y) waarde kan vinden van je mouse.
+      http://stackoverflow.com/questions/1114465/getting-mouse-location-in-canvas
 */
 
 
