@@ -52,6 +52,10 @@ var data = [{ "id": 1,
 
    8. Maak een js function die de (x,y) waarde kan vinden van je mouse.
       http://stackoverflow.com/questions/1114465/getting-mouse-location-in-canvas
+
+  9. Ga voor ieder staafje in het diagram na of de muispositie zich binnen het rectangle bevindt.
+
+  10.Als het dat zo is geef dan een alert met het id van de betreffende persoon.
 */
 
 
