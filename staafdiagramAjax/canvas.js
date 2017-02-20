@@ -122,6 +122,7 @@ canvas.addEventListener('mousemove', function(evt) {
            var text = document.createTextNode("id: " + data[i].id);
            pTag.appendChild(text);
            parent.insertBefore(pTag, lastChild);
+           
 
 
            
