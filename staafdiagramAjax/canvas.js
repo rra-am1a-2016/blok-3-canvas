@@ -111,7 +111,7 @@ canvas.addEventListener('mousemove', function(evt) {
    var length = data.length;
    for ( var i = 0; i < length; i++)
    {
-      if ( mousePos.x > data[i].coordinates.x && 
+      if (  mousePos.x > data[i].coordinates.x && 
             mousePos.x < data[i].coordinates.x + data[i].coordinates.dx &&
             mousePos.y < data[i].coordinates.y && 
             mousePos.y > data[i].coordinates.y + data[i].coordinates.dy)
@@ -124,14 +124,6 @@ canvas.addEventListener('mousemove', function(evt) {
            parent.insertBefore(pTag, lastChild);
            
 
-
-           
-           /*
-            alert("id: " + data[i].id + "<br>" +
-                  "Naam: " + data[i].firstName + "<br>" +
-                  "Aantal gekozen bedrijven: " + data[i].firstName + "<br>" +
-                  "dx: " + data[i].coordinates.dx);
-            */
             modal.style.display = "block";
             break;
       }
