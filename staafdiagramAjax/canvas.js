@@ -116,13 +116,11 @@ canvas.addEventListener('mousemove', function(evt) {
             mousePos.y < data[i].coordinates.y && 
             mousePos.y > data[i].coordinates.y + data[i].coordinates.dy)
       {
-           var parent = document.getElementsByClassName("modal-content")[0];
-           var lastChild = parent.lastChild;
-           var pTag = document.createElement("p");
-           var text = document.createTextNode("id: " + data[i].id);
-           pTag.appendChild(text);
-           parent.insertBefore(pTag, lastChild);
-           
+            document.getElementById("image").setAttribute("src",  "images/" + data[i].id + ".jpg");            
+            document.getElementById("image").setAttribute("alt",  "images/" + data[i].id + ".jpg");            
+            document.getElementById("id").innerHTML = "ID: " + data[i].id;
+            document.getElementById("firstName").innerHTML = "Naam: " + data[i].firstName;
+            document.getElementById("numberOfContacts").innerHTML = "Aantal bedrijven: " + data[i].numberOfContacts;
 
             modal.style.display = "block";
             break;
